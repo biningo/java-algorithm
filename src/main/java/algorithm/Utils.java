@@ -1,5 +1,6 @@
 package algorithm;
 
+import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Utils {
@@ -12,7 +13,10 @@ public class Utils {
     }
 
     public static boolean checkSort(int[] original, int[] current) {
-        // TODO
-        return false;
+        if (original.length != current.length) {
+            return false;
+        }
+        Arrays.sort(original);
+        return Arrays.equals(original, current);
     }
 }

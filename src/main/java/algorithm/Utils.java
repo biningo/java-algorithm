@@ -11,12 +11,4 @@ public class Utils {
         }
         return ints;
     }
-
-    public static boolean checkSort(int[] original, int[] current) {
-        if (original.length != current.length) {
-            return false;
-        }
-        Arrays.sort(original);
-        return Arrays.equals(original, current);
-    }
 }
